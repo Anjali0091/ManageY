@@ -14,7 +14,7 @@ const Login = () => {
         try {
             const response = await api.post('/auth/login', { email, password });
             localStorage.setItem('token', response.data.token);
-            localStorage.setItem('userId', String(response.data.user));
+            localStorage.setItem('userId', String(response.data.user.id));
             localStorage.setItem('userName', response.data.user.name);
             localStorage.setItem('userRole', response.data.user.role);
             navigate('/dashboard');
