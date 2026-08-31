@@ -23,7 +23,7 @@ app.use("/api/challans", challanRoutes);
 
 app.get("/", (req, res) => {
     res.json({
-        messsage: "ERP & CRM Backend API is running successfully",
+        message: "ERP & CRM Backend API is running successfully",
     });
 });
 
